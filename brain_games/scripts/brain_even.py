@@ -1,9 +1,12 @@
 #!/usr/bin/env python3
 from random import randint
 import prompt
+from brain_games.cli import welcome_user
 
 
 def main():
+
+    name = welcome_user()
 
     print("Answer 'yes' if the number is even, otherwise answer 'no'.")
     i = 0
@@ -23,11 +26,11 @@ def main():
             print("Correct!")
             i += 1
         else:
-            print('\"' + answer + '\"' + 'is wrong answer ;(. Correct was \" ' + correct_answer + '\"')
-            print('Let\'s try again!')
+            print('\"' + answer + '\"' + 'is wrong answer ;(. Correct was \"' + correct_answer + '\"')
+            print(f'Let\'s try again, {name}!')
             return
 
-    print("Congratulations!")
+    print(f"Congratulations, {name}!")
 
 
 if __name__ == '__main__':
