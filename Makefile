@@ -8,3 +8,5 @@ publish:
 	poetry publish --dry-run
 brain-games:
 	poetry run brain-games
+linter:
+	poetry run flake8 brain_games
