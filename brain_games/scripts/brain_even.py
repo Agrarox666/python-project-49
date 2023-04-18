@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 from random import randint
 import prompt
-from brain_games.cli import welcome_user
+from brain_games.cli import welcome_user, ask, get_answer, compare, congrats
 
 
 def main():
@@ -14,24 +14,26 @@ def main():
 
         random_number = randint(0, 100)
         is_even = not (random_number % 2)
+
         if (is_even):
             correct_answer = 'yes'
         else:
             correct_answer = 'no'
 
-        print("Question: " + str(random_number))
-        answer = prompt.string("Your answer: ")
+        ask(str(random_number))
+        answer = get_answer()
 
-        if (answer == correct_answer):
-            print("Correct!")
+        if compare(correct_answer, answer):
             i += 1
         else:
-            print('\"' + answer + '\"' + ' is wrong answer ;(. Correct was \"' + correct_answer + '\"')
-            print(f'Let\'s try again, {name}!')
             return
 
-    print(f"Congratulations, {name}!")
+    congrats(name)
 
+
+def generate_number():
+
+    random_number = randint(0, 100)
 
 if __name__ == '__main__':
 
