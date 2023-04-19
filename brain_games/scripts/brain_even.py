@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 from random import randint
-import prompt
 from brain_games.cli import welcome_user, ask, get_answer, compare, congrats
 
 
@@ -8,14 +7,21 @@ def main():
 
     name = welcome_user()
 
+    if even_game():
+        congrats(name)
+    else:
+        return
+
+
+def even_game():
+
     print("Answer 'yes' if the number is even, otherwise answer 'no'.")
     i = 0
     while (i < 3):
 
         random_number = randint(0, 100)
-        is_even = not (random_number % 2)
 
-        if (is_even):
+        if not (random_number % 2):
             correct_answer = 'yes'
         else:
             correct_answer = 'no'
@@ -26,14 +32,9 @@ def main():
         if compare(correct_answer, answer):
             i += 1
         else:
-            return
+            return False
+    return True
 
-    congrats(name)
-
-
-def generate_number():
-
-    random_number = randint(0, 100)
 
 if __name__ == '__main__':
 
