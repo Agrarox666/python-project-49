@@ -14,3 +14,6 @@ https://asciinema.org/a/MDgAoj7eXye9hS9GcgSSagTpy
 
 Прогрессия
 https://asciinema.org/a/ZgMw6yA9eRopjbWNkWAH77SU5
+
+Простое ли число?
+https://asciinema.org/a/tpqNvgdL3sVzTCswm3DGygmDa
