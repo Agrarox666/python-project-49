@@ -24,4 +24,3 @@ def even_game():
         else:
             return False
     return True
-	
