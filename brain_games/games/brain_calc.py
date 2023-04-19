@@ -24,7 +24,12 @@ def calc_game():
         operation = randint(0, 2)
 
         ask(make_expression(num1, num2, operation))
-        answer = int(get_answer())
+        try:
+            answer = int(get_answer())
+        except ValueError:
+            print("Error!")
+            return False
+
         correct_answer = calc(num1, num2, operation)
 
         if compare(correct_answer, answer):
