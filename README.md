@@ -8,3 +8,6 @@ https://asciinema.org/a/xTMXCyPz3xIHHrXp3JpLWz30b
 
 Калькулятор
 https://asciinema.org/a/fENz6GknoINCru4ZYG9O1L1oi
+
+НОД 
+https://asciinema.org/a/MDgAoj7eXye9hS9GcgSSagTpy
