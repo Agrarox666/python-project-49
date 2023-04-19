@@ -19,9 +19,9 @@ def calc_game():
     i = 0
     while (i < 3):
 
-        num1 = randint(0,100)
-        num2 = randint(0,100)
-        operation = randint(0,2)
+        num1 = randint(0, 100)
+        num2 = randint(0, 100)
+        operation = randint(0, 2)
 
         ask(make_expression(num1, num2, operation))
         answer = int(get_answer())
@@ -32,6 +32,7 @@ def calc_game():
         else:
             return False
     return True
+
 
 def make_expression(num1, num2, operation):
 
@@ -44,9 +45,9 @@ def calc(a, b, operation):
     if operation == 0:
         return a + b
     elif operation == 1:
-       return a - b
+        return a - b
     else:
-       return a * b
+        return a * b
 
 
 def addition(a, b):

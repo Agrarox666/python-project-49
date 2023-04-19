@@ -23,7 +23,7 @@ def get_answer():
 
 def compare(correct_answer, answer):
 
-    if(correct_answer == answer):
+    if (correct_answer == answer):
         print("Correct!")
         return True
     else:
