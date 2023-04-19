@@ -11,3 +11,6 @@ https://asciinema.org/a/fENz6GknoINCru4ZYG9O1L1oi
 
 НОД 
 https://asciinema.org/a/MDgAoj7eXye9hS9GcgSSagTpy
+
+Прогрессия
+https://asciinema.org/a/ZgMw6yA9eRopjbWNkWAH77SU5
