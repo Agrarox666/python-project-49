@@ -6,6 +6,7 @@ from brain_games.games.progression_game import progression_game
 def main():
 
     name = welcome_user()
+    print("What number is missing in the progression?")
 
     if progression_game():
         congrats(name)

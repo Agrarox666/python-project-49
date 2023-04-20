@@ -5,7 +5,6 @@ from brain_games.cli import ask, get_answer, compare
 
 def progression_game():
 
-    print("What number is missing in the progression?")
     i = 0
     while (i < 3):
 
@@ -15,15 +14,13 @@ def progression_game():
         pass_member = randint(0, length - 1)
 
         ask(make_progression(begin, step, length, pass_member))
-        correct_answer = define_member(begin, step, pass_member)
 
         try:
             answer = int(get_answer())
         except ValueError:
-            print("Error!")
-            return False
+            answer = None
 
-        if compare(correct_answer, answer):
+        if compare(define_member(begin, step, pass_member), answer):
             i += 1
         else:
             return False
