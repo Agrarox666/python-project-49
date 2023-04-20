@@ -1,37 +1,18 @@
 #!/usr/bin/env python3
 from random import randint
-from brain_games.cli import ask, get_answer, compare
 
 
-def progression_game():
+def progression_task():
 
-    i = 0
-    while (i < 3):
-
-        begin = randint(0, 100)
-        step = randint(1, 10)
-        length = randint(5, 10)
-        pass_member = randint(0, length - 1)
-
-        ask(make_progression(begin, step, length, pass_member))
-
-        try:
-            answer = int(get_answer())
-        except ValueError:
-            answer = None
-
-        if compare(define_member(begin, step, pass_member), answer):
-            i += 1
-        else:
-            return False
-    return True
-
-
-def make_progression(begin, step, length, pass_member):
+    begin = randint(0, 100)
+    step = randint(1, 10)
+    length = randint(5, 10)
+    pass_member = randint(0, length - 1)
 
     x = 0
     member = begin
     result = ''
+
     while x < length:
 
         if (x == pass_member):
@@ -45,6 +26,11 @@ def make_progression(begin, step, length, pass_member):
     return result
 
 
-def define_member(begin, step, pass_member):
+def progression_solution(progression):
 
-    return begin + step * pass_member
+    progression_list = progression.split(' ')
+    begin = int(progression_list[0])
+    step = int(progression_list[1]) - int(progression_list[0])
+    pass_member = progression_list.index('..')
+
+    return str(begin + step * pass_member)
