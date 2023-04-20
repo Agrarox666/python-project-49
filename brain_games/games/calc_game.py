@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 from random import randint, choice
-from brain_games.cli import ask, get_answer, compare
 
 
 SIGN = ['+', '-', '*']
+
 
 def calc_task():
 
@@ -12,6 +12,7 @@ def calc_task():
     sign = choice(SIGN)
 
     return f"{num1} {sign} {num2}"
+
 
 def calc_solution(expression):
 
@@ -26,4 +27,3 @@ def calc_solution(expression):
         return str(a - b)
     else:
         return str(a * b)
-

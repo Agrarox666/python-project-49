@@ -5,7 +5,8 @@ from brain_games.game import run_game
 
 def main():
 
-    even_description = 'Answer "yes" if the number is even, otherwise answer "no".'
+    even_description = 'Answer "yes" if the number is even,' \
+                       ' otherwise answer "no".'
     run_game(even_task, even_solution, even_description)
 
 

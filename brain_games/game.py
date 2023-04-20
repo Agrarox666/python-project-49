@@ -1,5 +1,6 @@
 import prompt
 
+
 def run_game(game_task, game_solution, game_description):
 
     name = welcome_user()
@@ -65,6 +66,7 @@ def congrats(name):
 def consolation(name):
 
     print(f"Let's try again, {name}!")
+
 
 def wrong_answer(correct_answer, answer):
 
