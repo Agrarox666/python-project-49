@@ -24,7 +24,7 @@ def prime_game():
 def is_simple(number):
 
     if (number < 2):
-        return 'yes'
+        return 'no'
     i = 2
     while (i < number):
         if not (number % i):
