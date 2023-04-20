@@ -32,8 +32,9 @@ def progression_solution(progression):
     pass_member = progression_list.index('..')
 
     if (pass_member == 0):
-        begin = int(progression_list[1])
-        step = int(progression_list[2]) - int(progression_list[1])
+
+        return int(progression_list[1] - (int(progression_list[2]) - int(progression_list[1])))
+
     elif (pass_member == 1):
         step = int(progression_list[3]) - int(progression_list[2])
         begin = int(progression_list[0])
