@@ -27,7 +27,8 @@ def compare(correct_answer, answer):
         print("Correct!")
         return True
     else:
-        print(f"\'{answer}\' is wrong answer ;(. Correct answer was \'{correct_answer}\'")
+        print(f"\'{answer}\' is wrong answer ;(. "
+              f"Correct answer was \'{correct_answer}\'")
         return False
 
 
