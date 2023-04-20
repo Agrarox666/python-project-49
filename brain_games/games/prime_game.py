@@ -1,24 +1,13 @@
 #!/usr/bin/env python3
 from random import randint
-from brain_games.cli import ask, get_answer, compare
 
 
-def prime_game():
+def prime_task():
 
-    i = 0
-    while (i < 3):
-
-        task = randint(0, 100)
-        ask(task)
-
-        if compare(is_simple(task), get_answer()):
-            i += 1
-        else:
-            return False
-    return True
+    return randint(0, 100)
 
 
-def is_simple(number):
+def prime_solution(number):
 
     if (number < 2):
         return 'no'
