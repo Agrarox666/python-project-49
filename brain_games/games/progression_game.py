@@ -29,8 +29,16 @@ def progression_task():
 def progression_solution(progression):
 
     progression_list = progression.split(' ')
-    begin = int(progression_list[0])
-    step = int(progression_list[1]) - int(progression_list[0])
     pass_member = progression_list.index('..')
+
+    if (pass_member == 0):
+        begin = int(progression_list[1])
+        step = int(progression_list[2]) - int(progression_list[1])
+    elif (pass_member == 1):
+        step = int(progression_list[3]) - int(progression_list[2])
+        begin = int(progression_list[0])
+    else:
+        begin = int(progression_list[0])
+        step = int(progression_list[1]) - int(progression_list[0])
 
     return str(begin + step * pass_member)
