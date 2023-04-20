@@ -44,13 +44,18 @@ def get_answer():
 
 def is_correct(correct_answer, answer):
 
-    if (correct_answer == answer):
-        print("Correct!")
-        return True
-    else:
-        print(f"\'{answer}\' is wrong answer ;(. "
-              f"Correct answer was \'{correct_answer}\'")
+    try:
+        if (correct_answer == answer):
+            print("Correct!")
+            return True
+        else:
+            wrong_answer(correct_answer, answer)
+            return False
+
+    except ValueError:
+        wrong_answer(correct_answer, answer)
         return False
+
 
 def congrats(name):
 
@@ -60,3 +65,8 @@ def congrats(name):
 def consolation(name):
 
     print(f"Let's try again, {name}!")
+
+def wrong_answer(correct_answer, answer):
+
+    print(f"\'{answer}\' is wrong answer ;(. "
+          f"Correct answer was \'{correct_answer}\'")
