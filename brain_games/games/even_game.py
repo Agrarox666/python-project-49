@@ -5,22 +5,28 @@ from brain_games.cli import ask, get_answer, compare
 
 def even_game():
 
-    print('Answer "yes" if the number is even, otherwise answer "no".')
     i = 0
     while (i < 3):
 
-        random_number = randint(0, 100)
-
-        if not (random_number % 2):
-            correct_answer = 'yes'
-        else:
-            correct_answer = 'no'
+        random_number = make_number()
 
         ask(str(random_number))
-        answer = get_answer()
 
-        if compare(correct_answer, answer):
+        if compare(find_answer(random_number), get_answer()):
             i += 1
         else:
             return False
     return True
+
+
+def make_number():
+
+    return randint(0, 100)
+
+
+def find_answer(number):
+
+    if not (number % 2):
+        return 'yes'
+    else:
+        return 'no'
