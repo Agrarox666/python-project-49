@@ -6,6 +6,7 @@ from brain_games.games.calc_game import calc_game
 def main():
 
     name = welcome_user()
+    print("What is the result of the expression?")
 
     if calc_game():
         congrats(name)
