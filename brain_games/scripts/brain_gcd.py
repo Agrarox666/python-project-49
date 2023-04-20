@@ -6,6 +6,7 @@ from brain_games.games.gcd_game import gcd_game
 def main():
 
     name = welcome_user()
+    print("Find the greatest common divisor of given numbers.")
 
     if gcd_game():
         congrats(name)
