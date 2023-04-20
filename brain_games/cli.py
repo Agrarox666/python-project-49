@@ -34,3 +34,8 @@ def compare(correct_answer, answer):
 def congrats(name):
 
     print(f"Congratulations, {name}!")
+
+
+def consolation(name):
+
+    print(f"Let's try again, {name}!")
