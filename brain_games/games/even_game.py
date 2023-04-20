@@ -5,7 +5,7 @@ from brain_games.cli import ask, get_answer, compare
 
 def even_game():
 
-    print("Answer 'yes' if the number is even, otherwise answer 'no'.")
+    print('Answer "yes" if the number is even, otherwise answer "no".')
     i = 0
     while (i < 3):
 
