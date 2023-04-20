@@ -5,16 +5,13 @@ from brain_games.cli import ask, get_answer, compare
 
 def prime_game():
 
-    print('Answer "yes" if given number is prime. Otherwise answer "no".')
     i = 0
     while (i < 3):
 
         task = randint(0, 100)
         ask(task)
-        correct_answer = is_simple(task)
 
-        answer = get_answer()
-        if compare(correct_answer, answer):
+        if compare(is_simple(task), get_answer()):
             i += 1
         else:
             return False
