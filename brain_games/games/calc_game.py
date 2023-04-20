@@ -11,16 +11,16 @@ def calc_game():
 
         num1 = randint(0, 100)
         num2 = randint(0, 100)
-        operation = randint(0, 2)
+        sign_num = randint(0, 2)
 
-        ask(make_expression(num1, num2, operation))
+        ask(make_expression(num1, num2, sign_num))
         try:
             answer = int(get_answer())
         except ValueError:
             print("Error!")
             return False
 
-        correct_answer = calc(num1, num2, operation)
+        correct_answer = calc(num1, num2, sign_num)
 
         if compare(correct_answer, answer):
             i += 1
@@ -29,10 +29,10 @@ def calc_game():
     return True
 
 
-def make_expression(num1, num2, operation):
+def make_expression(num1, num2, sign_num):
 
     sign = ['+', '-', '*']
-    return f"{num1} {sign[operation]} {num2}"
+    return f"{num1} {sign[sign_num]} {num2}"
 
 
 def calc(a, b, operation):
