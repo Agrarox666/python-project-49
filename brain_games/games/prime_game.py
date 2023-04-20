@@ -5,7 +5,7 @@ from brain_games.cli import ask, get_answer, compare
 
 def prime_game():
 
-    print("Answer 'yes' if given number is prime. Otherwise answer 'no'.")
+    print('Answer "yes" if given number is prime. Otherwise answer "no".')
     i = 0
     while (i < 3):
 
