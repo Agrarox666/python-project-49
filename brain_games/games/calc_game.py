@@ -5,41 +5,25 @@ from brain_games.cli import ask, get_answer, compare
 
 SIGN = ['+', '-', '*']
 
+def calc_task():
 
-def calc_game():
+    num1 = randint(0, 100)
+    num2 = randint(0, 100)
+    sign = choice(SIGN)
 
-    i = 0
-    while (i < 3):
+    return f"{num1} {sign} {num2}"
 
-        num1 = randint(0, 100)
-        num2 = randint(0, 100)
-        sign = choice(SIGN)
+def calc_solution(expression):
 
-        ask(make_expression(num1, num2, sign))
-
-        try:
-            answer = int(get_answer())
-        except ValueError:
-            print("Error!")
-            return False
-
-        if compare(find_answer(num1, num2, sign), answer):
-            i += 1
-        else:
-            return False
-    return True
-
-
-def make_expression(a, b, sign):
-
-    return f"{a} {sign} {b}"
-
-
-def find_answer(a, b, sign):
+    list = expression.split(' ')
+    a = int(list[0])
+    b = int(list[2])
+    sign = list[1]
 
     if sign == '+':
-        return a + b
+        return str(a + b)
     elif sign == '-':
-        return a - b
+        return str(a - b)
     else:
-        return a * b
+        return str(a * b)
+

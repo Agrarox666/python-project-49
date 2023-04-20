@@ -1,18 +1,12 @@
 #!/usr/bin/env python3
-from brain_games.cli import welcome_user, congrats, consolation
-from brain_games.games.calc_game import calc_game
+from brain_games.games.calc_game import calc_task, calc_solution
+from brain_games.game import run_game
 
 
 def main():
 
-    name = welcome_user()
-    print("What is the result of the expression?")
-
-    if calc_game():
-        congrats(name)
-    else:
-        consolation(name)
-        return
+    calc_description = 'What is the result of the expression?'
+    run_game(calc_task, calc_solution, calc_description)
 
 
 if __name__ == '__main__':
