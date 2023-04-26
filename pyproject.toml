@@ -1,9 +1,13 @@
 [tool.poetry]
 name = "hexlet-code"
 version = "0.1.0"
-description = ""
+description = "A set of 5 simple console games"
 authors = ["Igor Loskutov <omfi017@gmail.com>"]
 readme = "README.md"
+classifiers = [
+    "Programming Language :: Python :: 3.0",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent"] 
 packages = [{include = "brain_games"}]
 
 [tool.poetry.dependencies]
