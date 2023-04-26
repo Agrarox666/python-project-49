@@ -13,7 +13,7 @@ To install this package you need use this commands:
 
 
 Чётное или нечётное?
-https://asciinema.org/a/xTMXCyPz3xIHHrXp3JpLWz30b
+[![asciicast](https://asciinema.org/a/xTMXCyPz3xIHHrXp3JpLWz30b.svg)](https://asciinema.org/a/xTMXCyPz3xIHHrXp3JpLWz30b)
 
 Калькулятор
 https://asciinema.org/a/fENz6GknoINCru4ZYG9O1L1oi
