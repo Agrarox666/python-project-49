@@ -1,3 +1,4 @@
+import prompt
 
 
 def run_game(game_task, game_solution, game_description):
