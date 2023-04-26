@@ -12,17 +12,17 @@ To install this package you need use this commands:
      2. make package-install
 
 
-Чётное или нечётное?
+Brain-Even:
 [![asciicast](https://asciinema.org/a/xTMXCyPz3xIHHrXp3JpLWz30b.svg)](https://asciinema.org/a/xTMXCyPz3xIHHrXp3JpLWz30b)
 
-Калькулятор
-https://asciinema.org/a/fENz6GknoINCru4ZYG9O1L1oi
+Brain-Calc:
+[![asciicast](https://asciinema.org/a/fENz6GknoINCru4ZYG9O1L1oi.svg)](https://asciinema.org/a/fENz6GknoINCru4ZYG9O1L1oi)
 
-НОД 
-https://asciinema.org/a/MDgAoj7eXye9hS9GcgSSagTpy
+Brain-Gcd:
+[![asciicast](https://asciinema.org/a/MDgAoj7eXye9hS9GcgSSagTpy.svg)](https://asciinema.org/a/MDgAoj7eXye9hS9GcgSSagTpy)
 
-Прогрессия
-https://asciinema.org/a/ZgMw6yA9eRopjbWNkWAH77SU5
+Brain-Progression:
+[![asciicast](https://asciinema.org/a/ZgMw6yA9eRopjbWNkWAH77SU5.svg)](https://asciinema.org/a/ZgMw6yA9eRopjbWNkWAH77SU5)
 
-Простое ли число?
-https://asciinema.org/a/tpqNvgdL3sVzTCswm3DGygmDa
+Brain-Prime:
+[![asciicast](https://asciinema.org/a/tpqNvgdL3sVzTCswm3DGygmDa.svg)](https://asciinema.org/a/tpqNvgdL3sVzTCswm3DGygmDa)
