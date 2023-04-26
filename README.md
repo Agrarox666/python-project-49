@@ -3,6 +3,15 @@
 
 <a href="https://codeclimate.com/github/Agrarox666/python-project-49/maintainability"><img src="https://api.codeclimate.com/v1/badges/fc1464fbf627ca6f83e8/maintainability" /></a>
 
+Python version: >= 3.0
+Poetry version: 1.4.2
+
+To install this package you need use this commands:
+
+     1. make install
+     2. make package-install
+
+
 Чётное или нечётное?
 https://asciinema.org/a/xTMXCyPz3xIHHrXp3JpLWz30b
 
