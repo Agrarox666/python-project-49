@@ -6,10 +6,12 @@
 Python version: >= 3.0
 Poetry version: 1.4.2
 
-To install this package you need use this commands:
+To install this package you need use this commands in terminal:
 
-     1. make install
-     2. make package-install
+     1. git clone git@github.com:Agrarox666/python-project-49.git
+     2. make install
+     3. make package-install
+     4. make build
 
 
 Brain-Even:
