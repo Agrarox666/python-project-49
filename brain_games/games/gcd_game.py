@@ -1,10 +1,15 @@
 #!/usr/bin/env python3
 from random import randint
 
+DESCRIPTION = 'Find the greatest common divisor of given numbers.'
 
-def gcd_task():
 
-    return f"{randint(0, 100)} {randint(0, 100)}"
+def game():
+
+    task = f"{randint(0, 100)} {randint(0, 100)}"
+    correct_answer = gcd_solution(task)
+
+    return correct_answer, task
 
 
 def gcd_solution(numbers):

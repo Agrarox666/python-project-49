@@ -3,15 +3,19 @@ from random import randint, choice
 
 
 SIGN = ['+', '-', '*']
+DESCRIPTION = 'What is the result of the expression?'
 
 
-def calc_task():
+def game():
 
     num1 = randint(0, 100)
     num2 = randint(0, 100)
     sign = choice(SIGN)
 
-    return f"{num1} {sign} {num2}"
+    task = f"{num1} {sign} {num2}"
+    correct_answer = calc_solution(task)
+
+    return correct_answer, task
 
 
 def calc_solution(expression):

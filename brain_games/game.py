@@ -1,46 +1,28 @@
 import prompt
 
 
-def run_game(game_task, game_solution, game_description):
-
-    name = welcome_user()
-    print(game_description)
-
-    x = 0
-    while (x < 3):
-
-        task = game_task()
-        ask(task)
-        answer = get_answer()
-
-        if (is_correct(game_solution(task), answer)):
-            x += 1
-        else:
-            consolation(name)
-            return False
-
-    congrats(name)
-    return True
-
-
-def welcome_user():
+def run_game(game):
 
     print("Welcome to the Brain Games!")
     name = prompt.string('May I have your name? ')
     print("Hello, " + name + "!")
+    print(game.DESCRIPTION)
 
-    return name
+    x = 0
+    while (x < 3):
 
+        correct_answer, task = game.game()
+        print(f"Question: {task}")
+        answer = prompt.string("Your answer: ")
 
-def ask(task):
+        if (is_correct(correct_answer, answer)):
+            x += 1
+        else:
+            print(f"Let's try again, {name}!")
+            return False
 
-    print(f"Question: {task}")
-
-
-def get_answer():
-
-    answer = prompt.string("Your answer: ")
-    return answer
+    print(f"Congratulations, {name}!")
+    return True
 
 
 def is_correct(correct_answer, answer):
@@ -56,16 +38,6 @@ def is_correct(correct_answer, answer):
     except ValueError:
         wrong_answer(correct_answer, answer)
         return False
-
-
-def congrats(name):
-
-    print(f"Congratulations, {name}!")
-
-
-def consolation(name):
-
-    print(f"Let's try again, {name}!")
 
 
 def wrong_answer(correct_answer, answer):

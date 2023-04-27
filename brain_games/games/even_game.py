@@ -2,14 +2,12 @@
 from random import randint
 
 
-def even_task():
+DESCRIPTION = 'Answer "yes" if the number is even,' \
+                       ' otherwise answer "no".'
 
-    return randint(0, 100)
 
+def game():
 
-def even_solution(number):
-
-    if not (number % 2):
-        return 'yes'
-    else:
-        return 'no'
+    task = randint(0, 100)
+    correct_answer = str(task % 2 == 0 and 'yes' or 'no')
+    return correct_answer, task

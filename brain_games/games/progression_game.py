@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
 from random import randint
 
+DESCRIPTION = 'What number is missing in the progression?'
 
-def progression_task():
+
+def game():
 
     begin = randint(0, 100)
     step = randint(1, 10)
@@ -11,19 +13,20 @@ def progression_task():
 
     x = 0
     member = begin
-    result = ''
+    task = ''
 
     while x < length:
 
         if (x == pass_member):
-            result += '.. '
+            task += '.. '
             x += 1
         else:
             member = begin + step * x
-            result += str(member) + ' '
+            task += str(member) + ' '
             x += 1
 
-    return result
+    correct_answer = progression_solution(task)
+    return correct_answer, task
 
 
 def progression_solution(progression):

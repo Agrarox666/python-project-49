@@ -1,10 +1,15 @@
 #!/usr/bin/env python3
 from random import randint
 
+DESCRIPTION = ('Answer "yes" if given number is prime. '
+                     'Otherwise answer "no".')
 
-def prime_task():
 
-    return randint(0, 100)
+def game():
+
+    task = randint(0, 100)
+    correct_answer = prime_solution(task)
+    return correct_answer, task
 
 
 def prime_solution(number):
