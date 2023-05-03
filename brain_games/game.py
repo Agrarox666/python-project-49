@@ -17,7 +17,7 @@ def run_game(game):
 
         if (correct_answer == answer):
             print("Correct!")
-            rounds +=1
+            rounds += 1
         else:
             print(f"\'{answer}\' is wrong answer ;(. "
                   f"Correct answer was \'{correct_answer}\'"

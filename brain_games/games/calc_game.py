@@ -8,7 +8,6 @@ DESCRIPTION = 'What is the result of the expression?'
 
 def calc_expression(num1, num2, sign):
 
-
     if sign == '+':
         return str(num1 + num2)
     elif sign == '-':
