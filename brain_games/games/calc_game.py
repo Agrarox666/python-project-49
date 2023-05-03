@@ -6,28 +6,24 @@ SIGN = ['+', '-', '*']
 DESCRIPTION = 'What is the result of the expression?'
 
 
-def game():
+def calc_expression(num1, num2, sign):
+
+
+    if sign == '+':
+        return str(num1 + num2)
+    elif sign == '-':
+        return str(num1 - num2)
+    else:
+        return str(num1 * num2)
+
+
+def get_game():
 
     num1 = randint(0, 100)
     num2 = randint(0, 100)
     sign = choice(SIGN)
 
     task = f"{num1} {sign} {num2}"
-    correct_answer = calc_solution(task)
+    correct_answer = calc_expression(num1, num2, sign)
 
     return correct_answer, task
-
-
-def calc_solution(expression):
-
-    list = expression.split(' ')
-    a = int(list[0])
-    b = int(list[2])
-    sign = list[1]
-
-    if sign == '+':
-        return str(a + b)
-    elif sign == '-':
-        return str(a - b)
-    else:
-        return str(a * b)

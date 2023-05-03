@@ -4,7 +4,7 @@ from random import randint
 DESCRIPTION = 'What number is missing in the progression?'
 
 
-def game():
+def get_game():
 
     begin = randint(0, 100)
     step = randint(1, 10)
@@ -25,11 +25,11 @@ def game():
             task += str(member) + ' '
             x += 1
 
-    correct_answer = progression_solution(task)
+    correct_answer = find_progression(task)
     return correct_answer, task
 
 
-def progression_solution(progression):
+def find_progression(progression):
 
     progression_list = progression.split(' ')
     pass_member = progression_list.index('..')
